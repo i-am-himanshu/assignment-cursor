@@ -1,0 +1,51 @@
+.bg-theme{
+    background: #14120b;
+    color: #edecec;
+    font-family: "CursorGothic","CursorGothic Fallback",system-ui,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.apply-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 95.75px;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.pad-nav{
+    padding: 5.6px 15px
+}
+
+.head {
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+}
+
+.width-fix{
+    max-width: 1300px;
+    height: 52px;
+    margin-left: 110.4px;
+}
+
+.signin{
+    font-size: 0.875rem;
+    padding: .4em .75em .42em;
+    background: #14120b;
+    color: #edecec;
+    border: 1px solid #757373;
+    border-radius: 3.40282e38px;
+}
+
+.download {
+    font-size: 0.875rem;
+    padding: .4em .75em .42em;
+    border: 1px solid #757373;
+    border-radius: 3.40282e38px;
+}

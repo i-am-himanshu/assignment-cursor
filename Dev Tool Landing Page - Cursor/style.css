@@ -23,15 +23,14 @@
 }
 
 .head {
+    display: block;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     z-index: 50;
 }
 
 .width-fix{
-    max-width: 1300px;
     height: 52px;
-    margin-left: 110.4px;
 }
 
 .signin{
@@ -48,4 +47,77 @@
     padding: .4em .75em .42em;
     border: 1px solid #757373;
     border-radius: 3.40282e38px;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.mt-x {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.max-w-prose {
+    max-width: 65ch;
+}
+
+.type-md-lg {
+    font-size: 1.625rem;
+    line-height: 1.25;
+    font-weight: 480;
+    letter-spacing: -0.08rem;
+}
+
+.text-balance {
+    text-wrap: balance;
+}
+
+.mb-v1 {
+    margin-bottom: calc(1rem*1.4);
+}
+
+.pad-blk-start {
+    padding-block-start: calc(1rem*1.4*5);
+}
+
+.hero-banner {
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--color-theme-button-bg);
+    border: 1px solid var(--color-theme-button-bg);
+    color: var(--color-theme-button-text);
+    cursor: pointer;
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    padding: var(--button-padding-default);
+    border-radius: 3.40282e38px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.mb-2 {
+    margin-bottom: calc(1rem*1.4*2);
+}
+
+:root {
+    --color-theme-button-bg: #edecec;
+    --color-theme-button-text: #14120b;
+    --text-base: 1rem;
+    --font-weight-normal: 400;
+    --button-padding-default: 0.78rem 1.35rem 0.8rem;
 }

@@ -75,7 +75,7 @@
     font-size: 1.625rem;
     line-height: 1.25;
     font-weight: 480;
-    letter-spacing: -0.08rem;
+    /* letter-spacing: -0.08rem; */
 }
 
 .text-balance {
@@ -84,6 +84,10 @@
 
 .mb-v1 {
     margin-bottom: calc(1rem*1.4);
+}
+
+.mb-v4{
+    margin-bottom: calc(1rem*1.4*4);
 }
 
 main>.section:first-child, .section--first-child {
@@ -96,6 +100,72 @@ main>.section:first-child, .section--first-child {
 
 .hero-banner {
     width: 100%;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.grid-1-8 {
+    display: grid;
+    grid-template-columns: repeat(8,  1fr);
+    grid-template-rows: 1fr;
+    gap: calc(calc(10rem/16) * 1);
+}
+
+.cards {
+    background-color: #1b1913;
+    position: relative;
+    padding-inline: calc(calc(10rem/16) * 0.75);
+    display: flex;
+    height: 6.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.card-background {
+    background-color: #1b1913;
+    /* border: 2px solid red; */
+}
+
+.text-theme-text {
+    color: #edecec;
+}
+
+.section--flush-y {
+    padding-block: 0 !important;
+}
+
+.card-pad {
+    padding: calc(calc(10rem/16)*1.75);
+}
+
+.type-md {
+    font-size: 1.375rem;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+.text-color-sec{
+    color: color-mix(in oklab, #edecec 60%, transparent);
+}
+
+.mt-v8-12 {
+    margin-top: calc(1rem*1.4*8/12);
+}
+
+.clr {
+    color: #f54e00;
+}
+
+.m0{
+    margin: 0 !important;
+}
+
+.order-2 {
+    order: 2;
 }
 
 .btn {
@@ -122,10 +192,155 @@ main>.section:first-child, .section--first-child {
     padding: calc(1rem * 1.4 * 3) calc(calc(10rem/16)*2);
 }
 
+.text-center {
+    text-align: center;
+}
+
+.type-sm {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    line-height: var(--leading-normal);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--tracking-sm);
+}
+
 :root {
     --color-theme-button-bg: #edecec;
     --color-theme-button-text: #14120b;
     --text-base: 1rem;
     --font-weight-normal: 400;
     --button-padding-default: 0.78rem 1.35rem 0.8rem;
+    --font-sans: "CursorGothic","CursorGothic Fallback",system-ui,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --text-sm: 0.875rem;
+    --leading-normal: 1.5;
+    --tracking-sm: -0.01rem;
+}
+
+.p-30{
+    padding-left: 30px;
+}
+
+.mx-auto{
+    margin-inline: auto;
+}
+
+.mb-v2-5 {
+    margin-bottom: 56px;
+}
+
+.type-lg {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+.grid-2-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* border: 1px solid red; */
+}
+
+.testimonial-card{
+    padding-inline: calc(calc(10rem/16)*1.75);
+    padding-top: 15.9px;
+    padding-bottom: 17.5px;
+    background-color: #1b1913;
+    border-radius: 4px;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.gap-g1{
+    gap: calc(calc(10rem/16)*1);
+}
+
+.type-base{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 470;
+    letter-spacing: 0.005em;
+    white-space: pre-wrap;
+}
+
+.mt-v2{
+    margin-top: 60px;
+}
+
+.media-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    flex-shrink: 0;
+    z-index: 1;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+}
+
+.ml-10px-border{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.aspect-box{
+    grid-template-rows: repeat(1,minmax(0,1fr));
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    display: grid;
+}
+
+.row-span-full{
+    grid-row: 1 / -1;
+}
+
+.col-span-full{
+    grid-column: 1 / -1;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-cols-3{
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+.frontier-card{
+    padding-inline: calc(calc(10rem/16)*1.75);
+    padding-top: 15.9px;
+    padding-bottom: 17.5px;
+    background-color: #1b1913;
+    border-radius: 4px;
+    position: relative;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-pretty {
+    text-wrap: pretty;
+}
+
+.pt-18{
+    padding-top: 18px;
 }

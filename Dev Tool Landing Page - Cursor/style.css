@@ -22,6 +22,10 @@
     padding: 5.6px 15px
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .head {
     display: block;
     width: 100%;
